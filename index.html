@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>proj-Velo</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="styleSheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="page_title">
+<span>Task Management</span>
+</div>
+<div id="content">
+
+<table id="example" class="table table-hover">
+<thead>
+<tr>
+<th>Assigned_By</th>
+<th>Assigned_To</th>
+<th>Task_id</th>
+<th>Description</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+	<div class="buttons">
+		<button type="button" class="btn btn-info btn-md" data-toggle="modal"
+			data-target="#myModal">Add New</button>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Add New Row</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group"><label>Assigned_By</label><input type="text" class="form-control" id="assingby" placeholder="Name of Task Assigner"/></div>
+						<div class="form-group"><label>Assigned_To</label><input type="text" class="form-control" id="assingto" placeholder="Name of Task Assigned Person"/></div>
+						<div class="form-group"><label>Task_id</label><input type="number" class="form-control" id="taskid" placeholder="Task id"/></div>
+						<div class="form-group"><label>Description</label><input type="text" class="form-control" id="desc" placeholder="Short Description"/></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="addNew" class="btn btn-success" data-dismiss="modal">Add</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal fade" id="myModaledit">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Edit Row</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group"><label>Assigned_By</label><input type="text" class="form-control" id="eassignby" placeholder=""/></div>
+						<div class="form-group"><label>Assigned_To</label><input type="text" class="form-control" id="eassignto"/></div>
+						<div class="form-group"><label>Task_id</label><input type="number" class="form-control" id="etaskid"/></div>
+						<div class="form-group"><label>Description</label><input type="text" class="form-control" id="edesc"/></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" id="EditData" class="btn btn-success" data-dismiss="modal">Edit</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<script src="Script.js"></script>
+
+</body>
+</html>
